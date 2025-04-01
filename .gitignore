@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Electron build files
+/dist/
+/out/
+
+# Electron cache
+/.cache/
+/electron-builder-cache/
+/tmp/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Compiled files
+*.tsbuildinfo
+*.map
+
+# VSCode settings
+.vscode/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Electron-specific
+/build/
+/app.asar
+/app.asar.unpacked/

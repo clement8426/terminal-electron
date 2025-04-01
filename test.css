@@ -1,0 +1,40 @@
+#tools-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #3c3c3c;
+  color: #d4d4d4;
+  border: none;
+  cursor: pointer;
+}
+
+#tools-btn:hover {
+  background-color: #555;
+}
+
+#tools-menu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #3c3c3c;
+  color: #d4d4d4;
+  padding: 10px;
+  border: 1px solid #555;
+  display: none;
+}
+
+.tool-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  color: #d4d4d4;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tool-btn:hover {
+  background-color: #555;
+}

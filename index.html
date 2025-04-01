@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon Terminal avec Thèmes</title>
+  <link rel="stylesheet" href="./node_modules/xterm/css/xterm.css" />
+  <style id="theme-style">
+    body {
+      margin: 10px;
+      background: #1e1e1e;
+      font-family: monospace;
+    }
+    #terminal-container {
+      background: #252526;
+    }
+    .buttons {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      margin-right: 5px;
+      cursor: pointer;
+      background: #3c3c3c;
+      color: #d4d4d4;
+      border: none;
+      border-radius: 3px;
+    }
+    button:hover {
+      background: #555;
+    }
+    #tools-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    #tools-menu {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: #3c3c3c;
+      color: #d4d4d4;
+      padding: 10px;
+      border: 1px solid #555;
+      display: none;
+    }
+    .tool-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #444;
+      color: #d4d4d4;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+    }
+    .tool-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons">
+    <button id="dark-btn">Dark</button>
+    <button id="dracula-btn">Dracula</button>
+  </div>
+  <button id="tools-btn">Outils</button>
+  <div id="tools-menu">
+    <button class="tool-btn" data-tool="nmap">Installer Nmap</button>
+    <button class="tool-btn" data-tool="git">Installer Git</button>
+    <!-- Ajoutez d'autres outils ici -->
+  </div>
+  <div id="terminal-container"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
